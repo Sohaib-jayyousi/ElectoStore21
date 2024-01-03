@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/fontawesome.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/e-01.png" width="150px" /></a>
+      </div>
+      <nav>
+        <ul id="Menuİtems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Products</a></li>
+
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="checkout.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
+
+  <!-- -------- account-page --------- -->
+
+  <div class="account-page">
+    <svg class="frame-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+      viewBox="0 0 1920 192.275">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #f3f6f9;
+          }
+        </style>
+      </defs>
+      <title>frame-decoration</title>
+      <path class="cls-1"
+        d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+        transform="translate(0 -158.755)" />
+    </svg>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/IMG_20231209_020630_653.png" width="100%" />
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div id="LoginForm" name="contact" netlify>
+              <input type="email" id="email" placeholder="Email">
+              <input type="password" id="password" placeholder="New Password">
+              <div id="button_container">
+                <button id="login" onclick="login()">Login</button>
+                <button id="register" onclick="register()">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------Footer-------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>
+            <a href="https://play.google.com/store/games?hl=en&gl=US">Download Our App</a>
+          </h3>
+          <p>
+            <a href="https://www.apple.com/app-store/">Download App for Android and İos mobile phone</a>
+          </p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+
+          <p>
+            Our Purpose İs To sustainably Make the Pleasure and Benefits of Techs Accessible to the Many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>
+            Useful Links
+          </h3>
+          <ul>
+            <li><a href="https://www.paypal.com/tr/home">Paypal</a></li>
+            <li><a href="https://www.godrejcp.com/contact-us">Godrejcp</a></li>
+            <li><a href="https://www.oppo.com/tr/ ">Oppo</a></li>
+            <li><a href="https://www.cci.com.tr">CCI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>
+            Follow us
+          </h3>
+          <ul>
+            <li><a href="https://www.facebook.com/"></a> Facebook</li>
+            <li><a href="https://twitter.com/home?lang=en"></a>Twitter</li>
+            <li><a href="https://www.instagram.com/"></a>İnstagram</li>
+            <li><a href="https://www.youtube.com/"></a>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var İndicator = document.getElementById("İndicator");
+
+    function register() {
+      RegForm.style.transform = "translatex(0px)";
+      LoginForm.style.transform = "translatex(0px)";
+      İndicator.style.transform = "translatex(100px)";
+    }
+
+    function login() {
+      RegForm.style.transform = "translatex(300px)";
+      LoginForm.style.transform = "translatex(300px)";
+      İndicator.style.transform = "translatex(0px)";
+    }
+
+    function userScroll() {
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) {
+          navbar.classList.add("bg-dark");
+          navbar.classList.add("navbar-sticky");
+        } else {
+          navbar.classList.remove("bg-dark");
+          navbar.classList.remove("navbar-sticky");
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", userScroll);
+  </script>
+  <script>
+    const Menuİtems = document.getElementById("Menuİtems");
+
+    Menuİtems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (Menuİtems.style.maxHeight == "0px") {
+        Menuİtems.style.maxHeight = "200px";
+      } else {
+        Menuİtems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="account.js"></script>
+</body>
+
+</html>

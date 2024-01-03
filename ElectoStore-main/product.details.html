@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/fontawesome.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/e-01.png" width="150px" /></a>
+      </div>
+      <nav>
+        <ul id="Menuİtems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Products</a></li>
+
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="checkout.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
+
+  <!-- -------- single product details ------------ -->
+
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/OZI9ES1.png" width="100%" id="Productİmg" />
+        <div class="small-img-row">
+          <div class="small-img-col">
+            <img src="images/OZI9ES1.png" width="100%" class="small-img1" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/IMG_20231209_011026_090.png" width="100%" class="small-img1" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/IMG_20231209_020630_653.png" width="100%" class="small-img1" />
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <p>Laptop / Mobile</p>
+        <h1>Devices</h1>
+        <h4>$50.00</h4>
+        <select>
+          <option>Select Color</option>
+          <option>Red</option>
+          <option>Black</option>
+          <option>white</option>
+          <option>Purple</option>
+          <option>Pink</option>
+        </select>
+        <input type="number" value="1" />
+        <a href="" class="btn">Add To Cart</a>
+        <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+        <br />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+          laborum consequatur id tempore, minus vero placeat provident magnam
+          perspiciatis! Sint vero, molestiae sequi delectus harum suscipit
+          aperiam at voluptatum dolor..
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- --------- title ------------ -->
+
+  <div class="container">
+    <div class="row row-2">
+      <h2>Related Products</h2>
+      <p>View More</p>
+    </div>
+    <div class="body">
+      <div class="container1">
+        <div class="product1">
+          <div class="product-card1">
+            <h2 class="name">Electo Laptop</h2>
+            <span class="price">$120.00</span>
+            <a href="#" class="popup-btn">Quick View</a>
+            <img src="images/OZI9ES1.png" alt="" class="product-img1" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a href="#"><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img1">
+                <img src="images/OZI9ES1.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>Electo Laptop<br /><span>Luxury Laptop</span></h2>
+                <p>
+                  The Mobigo XZ-300 Laptop boasts a 15.6-inch 4K display, Intel Core i7 multitasking performance, an HD
+                  camera with 720p
+                  resolution, fingerprint recognition for security, and extended battery life, redefining style and
+                  productivity.
+                </p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="product1">
+          <div class="product-card1">
+            <h2 class="name">Electo Mobile</h2>
+            <span class="price">$120.00</span>
+            <a href="#" class="popup-btn">Quick View</a>
+            <img src="images/20231209_011508.png" alt="" class="product-img1" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a href="#"><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img1">
+                <img src="images/20231209_011508.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>Electo Mobile<br /><span>Luxury Mobile</span></h2>
+                <p>
+                  The Mobigo XZ-300 phone features a 15.6-inch 4K display, Intel Core i7 multitasking performance, an HD
+                  camera with 720p
+                  resolution, fingerprint recognition for security, and continuous internet access, redefining style and
+                  mobility.
+                </p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="product1">
+          <div class="product-card1">
+            <h2 class="name">Electo Laptop</h2>
+            <span class="price">$120.00</span>
+            <a href="#" class="popup-btn">Quick View</a>
+            <img src="images/OZI9ES1.png" alt="" class="product-img1" />
+          </div>
+          <div class="popup-view">
+            <div class="popup-card">
+              <a href="#"><i class="fas fa-times close-btn"></i></a>
+              <div class="product-img1">
+                <img src="images/OZI9ES1.png" alt="" />
+              </div>
+              <div class="info">
+                <h2>Electo Laptop<br /><span>Luxury Laptop</span></h2>
+                <p>
+                  The Mobigo XZ-300 Laptop boasts a 15.6-inch 4K display, Intel Core i7 multitasking performance, an HD
+                  camera with 720p
+                  resolution, fingerprint recognition for security, and extended battery life, redefining style and
+                  productivity.
+                </p>
+                <span class="price">$120.00</span>
+                <a href="#" class="add-cart-btn">Add to Cart</a>
+                <a href="#" class="add-wish">Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------- products --------- -->
+
+  <!-- --------Footer-------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>
+            <a href="https://play.google.com/store/games?hl=en&gl=US">Download Our App</a>
+          </h3>
+          <p>
+            <a href="https://www.apple.com/app-store/">Download App for Android and İos mobile phone</a>
+          </p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+
+          <p>
+            Our Purpose İs To sustainably Make the Pleasure and Benefits of Techs Accessible to the Many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>
+            Useful Links
+          </h3>
+          <ul>
+            <li><a href="https://www.paypal.com/tr/home">Paypal</a></li>
+            <li><a href="https://www.godrejcp.com/contact-us">Godrejcp</a></li>
+            <li><a href="https://www.oppo.com/tr/ ">Oppo</a></li>
+            <li><a href="https://www.cci.com.tr">CCI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>
+            Follow us
+          </h3>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a> </li>
+            <li><a href="https://twitter.com/home?lang=en">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">İnstagram</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <script>
+    const Productİmg = document.getElementById("Productİmg");
+    const Smallİmg = document.getElementsByClassName("small-img1");
+
+    Smallİmg[0].onclick = function () {
+      Productİmg.src = Smallİmg[0].src;
+    };
+    Smallİmg[1].onclick = function () {
+      Productİmg.src = Smallİmg[1].src;
+    };
+    Smallİmg[2].onclick = function () {
+      Productİmg.src = Smallİmg[2].src;
+    };
+    Smallİmg[3].onclick = function () {
+      Productİmg.src = Smallİmg[3].src;
+    };
+  </script>
+  <script>
+    const Menuİtems = document.getElementById("Menuİtems");
+
+    Menuİtems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (Menuİtems.style.maxHeight == "0px") {
+        Menuİtems.style.maxHeight = "200px";
+      } else {
+        Menuİtems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script>
+    function userScroll() {
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) {
+          navbar.classList.add("bg-dark");
+          navbar.classList.add("navbar-sticky");
+        } else {
+          navbar.classList.remove("bg-dark");
+          navbar.classList.remove("navbar-sticky");
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", userScroll);
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

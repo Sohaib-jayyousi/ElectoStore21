@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/fontawesome.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/e-01.png" width="150px" /></a>
+      </div>
+      <nav>
+        <ul id="Menuİtems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+  </div>
+
+  <!-- ---------- cart itemsdetails ---------- -->
+
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Products</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/OZI9ES1.png" />
+            <div>
+              <p>Electo Laptop</p>
+              <small>$50.00</small>
+              <br />
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/IMG_20231209_011026_090.png" />
+            <div>
+              <p>Electo Mobile</p>
+              <small>$75.00</small>
+              <br />
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$75.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/OZI9ES1.png" />
+            <div>
+              <p>Electo Laptop</p>
+              <small>$75.00</small>
+              <br />
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" /></td>
+        <td>$75.00</td>
+      </tr>
+    </table>
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>$35.00</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$230.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- --------Footer-------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>
+            <a href="https://play.google.com/store/games?hl=en&gl=US">Download Our App</a>
+          </h3>
+          <p>
+            <a href="https://www.apple.com/app-store/">Download App for Android and İos mobile phone</a>
+          </p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+
+          <p>
+            Our Purpose İs To sustainably Make the Pleasure and Benefits of Techs Accessible to the Many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>
+            Useful Links
+          </h3>
+          <ul>
+            <li><a href="https://www.paypal.com/tr/home">Paypal</a></li>
+            <li><a href="https://www.godrejcp.com/contact-us">Godrejcp</a></li>
+            <li><a href="https://www.oppo.com/tr/ ">Oppo</a></li>
+            <li><a href="https://www.cci.com.tr">CCI</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>
+            Follow us
+          </h3>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a> </li>
+            <li><a href="https://twitter.com/home?lang=en">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">İnstagram</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <script>
+    function userScroll() {
+      const navbar = document.querySelector(".navbar1");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-dark");
+          navbar.classList.add("navbar-sticky");
+        } else {
+          navbar.classList.remove("bg-dark");
+          navbar.classList.remove("navbar-sticky");
+        }
+      });
+    }
+
+    document.addEventListener(DOMContentLoaded, userScroll);
+  </script>
+  <script>
+    const Menuİtems = document.getElementById("Menuİtems");
+
+    Menuİtems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (Menuİtems.style.maxHeight == "0px") {
+        Menuİtems.style.maxHeight = "200px";
+      } else {
+        Menuİtems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script>
+    function userScroll() {
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) {
+          navbar.classList.add("bg-dark");
+          navbar.classList.add("navbar-sticky");
+        } else {
+          navbar.classList.remove("bg-dark");
+          navbar.classList.remove("navbar-sticky");
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", userScroll);
+  </script>
+</body>
+
+</html>
